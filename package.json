@@ -1,125 +1,42 @@
 {
-    "name": "terminal-intuiter",
-    "displayName": "Terminal Intuiter",
-    "description": "Terminal Productivity VSCode Extension",
-    "version": "1.2.0",
-    "license": "MIT",
-    "publisher": "seonglae",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/seonglae/terminal-intuiter"
-    },
-    "galleryBanner": {
-        "color": "#242426",
-        "theme": "dark"
-    },
-    "icon": "images/logo.png",
-    "engines": {
-        "vscode": "^1.x.x"
-    },
-    "keywords": [
-        "terminal",
-        "intuiter",
-        "productivity",
-        "command",
-        "history"
-    ],
-    "categories": [
-        "Keymaps"
-    ],
-    "contributes": {
-        "keybindings": [
-            {
-                "key": "alt+b",
-                "command": "workbench.action.terminal.sendSequence",
-                "when": "terminalFocus",
-                "args": {
-                    "text": "\u0017"
-                }
-            },
-            {
-                "key": "alt+j",
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "\u001bb"
-                }
-            },
-            {
-                "key": "alt+l",
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "\u001bf"
-                }
-            },
-            {
-                "key": "alt+n",
-                "command": "workbench.action.terminal.sendSequence",
-                "when": "terminalFocus",
-                "args": {
-                    "text": "\u001bd"
-                }
-            },
-            {
-                "key": "alt+up",
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "cd ../\u000D"
-                },
-                "when": "terminalFocus"
-            },
-            {
-                "key": "alt+left",
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "dirhistory_back\u000D"
-                },
-                "when": "terminalFocus"
-            },
-            {
-                "key": "alt+right",
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "dirhistory_forward\u000D"
-                },
-                "when": "terminalFocus"
-            },
-            {
-                "key": "alt+down",
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "cd \t\t"
-                },
-                "when": "terminalFocus"
-            },
-            {
-              "key": "ctrl+shift+k",
-              "command": "workbench.action.terminal.focusNextPane",
-              "when": "terminalFocus"
-            },
-            {
-              "key": "ctrl+shift+i",
-              "command": "workbench.action.terminal.focusPreviousPane",
-              "when": "terminalFocus"
-            },
-            {
-              "key": "ctrl+shift+l",
-              "command": "workbench.action.terminal.focusNext",
-              "when": "terminalFocus"
-            },
-            {
-              "key": "ctrl+shift+j",
-              "command": "workbench.action.terminal.focusPrevious",
-              "when": "terminalFocus"
-            },
-            {
-                "key": "ctrl+shift+m",
-                "command": "git.merge",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "ctrl+shift+c",
-                "command": "git.commit"
-            }
-        ]
-    }
+  "name": "git-intuiter",
+  "displayName": "Git Intuiter",
+  "description": "Git Productivity VSCode Keybinding Extension",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publisher": "seonglae",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seonglae/git-intuiter"
+  },
+  "galleryBanner": {
+    "color": "#242426",
+    "theme": "dark"
+  },
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.x.x"
+  },
+  "keywords": [
+    "git",
+    "intuiter",
+    "productivity",
+    "keybindings",
+    "shortcuts"
+  ],
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+      },
+      {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+      }
+    ]
+  }
 }
