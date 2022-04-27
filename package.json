@@ -15,7 +15,7 @@
   },
   "icon": "images/logo.png",
   "engines": {
-    "vscode": "^1.66.1"
+    "vscode": "^1.999.0"
   },
   "keywords": [
     "git",
